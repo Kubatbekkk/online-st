@@ -4,7 +4,7 @@ import { numFormat } from '../../../utils/numFormat';
 
 const Card = ({ img, title, author, oldPrice, newPrice, isAvialable }) => {
   return (
-    <div className="card">
+    <div className={`card ${isAvialable || 'card--opacity'}`}>
       <img src={img} alt={title} className="card__img" />
       <h2 className="card__title">
         «{title}» {author}
