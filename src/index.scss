@@ -12,6 +12,12 @@ li {
 
 a {
   text-decoration: none;
+  color: #343030;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: #03020258;
+  }
 }
 
 h1,
@@ -68,6 +74,13 @@ body {
   font-family: 'Merriweather', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .btn {
