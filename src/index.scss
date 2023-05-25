@@ -76,6 +76,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// to make footer sticky
 #root {
   min-height: 100vh;
   display: flex;
@@ -84,7 +85,8 @@ body {
 }
 
 .btn {
-  padding: 13px 36px 14px;
+  width: 118px;
+  height: 48px;
   border: none;
   font-family: inherit;
   font-weight: 700;

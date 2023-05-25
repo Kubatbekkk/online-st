@@ -4,6 +4,10 @@ import { links } from '../../data/nav-links';
 import logo from '../../assets/logo.svg';
 
 const Navbar = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar__container">
@@ -23,7 +27,9 @@ const Navbar = () => {
             className="navbar__search-input"
             placeholder="Поиск по названию картины"
           />
-          <button className="btn btn--search">Найти</button>
+          <button className="btn btn--search" onClick={handleSubmit}>
+            Найти
+          </button>
         </form>
       </div>
     </nav>
