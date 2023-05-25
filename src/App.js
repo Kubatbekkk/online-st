@@ -1,8 +1,14 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import PageContent from './components/PageContent';
 
 function App() {
-  return <Navbar />;
+  return (
+    <>
+      <Navbar />
+      <PageContent />
+    </>
+  );
 }
 
 export default App;

@@ -2,7 +2,6 @@ import React from 'react';
 import './styles.scss';
 import { links } from '../../data/nav-links';
 import logo from '../../assets/logo.svg';
-import Button from '../Button';
 
 const Navbar = () => {
   return (
