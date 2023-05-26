@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+#### Задание 1 - Интернет-магазин<br/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Необходимо сверстать макет страницы интернет-магазина: https://www.figma.com/file/p5xYvZV5Vy9cZvWzkL7uk5/Redsoft-test?node-id=0%3A1
 
-## Available Scripts
+Для доступа к макету необходимо зарегистрироваться в Фигме и зайти под своим логином
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Технические требования:<br/>
+ Для соискателей, желающих показать свои знания современных библиотек/фреймворков (vue/react/angular): мы в компании используем vue.js. v2.x.<br/> 
+ - [x] Вы можете показать
+свои знания библиотеки, выполнив задание с использованием базового шаблона приложения из vue-cli. Использование других библиотек и инструментов нежелательно<br/>
+- [x] Верстка должна быть выполнена по методологии БЭМ<br/>
+- [x] Верстка должна максимально соответствовать предоставленному макету и ui-киту. Желательно PixelPerfect. Адаптив делать не нужно.<br/>
+- [x] Результат должен корректно отображаться во всех популярных браузерах, включая IE 11 версии при разрешении экрана 1200px и выше<br/>
+- [x] При работе над заданием обязательно использование средств автоматизации (webpack или gulp). Конфигурацию мы не предоставляем. Конфигурация должна корректно<br/> работать на 12 версии Node.js<br/>
+- [x] Обязательно использование scss при выполнении тестового задания (именно scss, не sass)<br/>
+- [x] Запрещено использовать css-фреймворки (bootstrap, foundation и т.д.)<br/>
+- [x] Кнопка “купить” должна реализовывать следующий функционал:<br/>
+по ее нажатию должен отправляться ajax запрос методом get по адресу https://jsonplaceholder.typicode.com/posts/1
