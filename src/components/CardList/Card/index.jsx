@@ -52,7 +52,7 @@ const Card = ({ id, img, title, author, oldPrice, newPrice, isAvialable }) => {
                 <Loader className="loader-animate" />
               </button>
             ) : isItemInCart ? (
-              <button className="btn" onClick={() => handleCartItem(id, 'del')}>
+              <button className="btn btn--incart" onClick={() => handleCartItem(id, 'del')}>
                 ✓ В корзине
               </button>
             ) : (
