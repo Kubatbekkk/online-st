@@ -6,6 +6,11 @@
   flex-direction: column;
   gap: 20px;
 
+  &__loader-img {
+    width: 14px;
+    height: 14px;
+  }
+
   &--opacity {
     opacity: 0.7;
   }
