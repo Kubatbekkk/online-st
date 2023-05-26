@@ -13,13 +13,21 @@ const Card = ({ id, img, title, author, oldPrice, newPrice, isAvialable }) => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
-  const handleCartItem = async (id) => {
-    setLoading(true);
-    const response = await fetch(
-      'https://jsonplaceholder.typicode.com/posts/1'
-    );
-    response.status === 200 ? setCart((prev) => [...prev, id]) : undefined;
-    setLoading(false);
+  const handleCartItem = async (id, type) => {
+    if (type === 'add') {
+      setLoading(true);
+      const response = await fetch(
+        'https://jsonplaceholder.typicode.com/posts/1'
+      );
+      response.status === 200 ? setCart((prev) => [...prev, id]) : undefined;
+      setTimeout(() => setLoading(false), 500);
+    } else if (type === 'del') {
+      setLoading(true);
+      setCart((prev) => prev.filter((i) => i !== id));
+      setTimeout(() => setLoading(false), 500);
+    } else {
+      throw new Error('Something went wrong.');
+    }
   };
 
   const isItemInCart = cart.some((s) => s === id);
@@ -39,20 +47,25 @@ const Card = ({ id, img, title, author, oldPrice, newPrice, isAvialable }) => {
               )}
               <p className="card__price--new">{numFormat.format(newPrice)}</p>
             </div>
-            <button className="btn btn--buy" onClick={() => handleCartItem(id)}>
-              {/* {loading ? (
-                <img
-                  src={loaderIcon}
-                  alt="loading"
-                  className="card__loader-img"
-                />
-              ) : isItemInCart ? (
-                'В корзине'
-              ) : (
-                'Купить'
-              )} */}
-              <Loader className="loader-animate" />
-            </button>
+            {loading ? (
+              <button className="btn btn--buy">
+                <Loader className="loader-animate" />
+              </button>
+            ) : isItemInCart ? (
+              <button
+                className="btn btn--buy"
+                onClick={() => handleCartItem(id, 'del')}
+              >
+                ✓ В корзине
+              </button>
+            ) : (
+              <button
+                className="btn btn--buy"
+                onClick={() => handleCartItem(id, 'add')}
+              >
+                Купить
+              </button>
+            )}
           </>
         ) : (
           <div className="card__price card__price--not">
