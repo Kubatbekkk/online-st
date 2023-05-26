@@ -48,14 +48,11 @@ const Card = ({ id, img, title, author, oldPrice, newPrice, isAvialable }) => {
               <p className="card__price--new">{numFormat.format(newPrice)}</p>
             </div>
             {loading ? (
-              <button className="btn btn--buy">
+              <button className="btn btn--buy" disabled>
                 <Loader className="loader-animate" />
               </button>
             ) : isItemInCart ? (
-              <button
-                className="btn btn--buy"
-                onClick={() => handleCartItem(id, 'del')}
-              >
+              <button className="btn" onClick={() => handleCartItem(id, 'del')}>
                 ✓ В корзине
               </button>
             ) : (
