@@ -1,4 +1,5 @@
 #### Задание 1 - Интернет-магазин<br/>
+### [Demo](https://online-st.netlify.app/)
 
 Необходимо сверстать макет страницы интернет-магазина: https://www.figma.com/file/p5xYvZV5Vy9cZvWzkL7uk5/Redsoft-test?node-id=0%3A1
 
