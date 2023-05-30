@@ -71,6 +71,7 @@ img {
 
 body {
   margin: 0;
+  width: 100vw;
   font-family: 'Merriweather', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -79,6 +80,7 @@ body {
 // to make footer sticky
 #root {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,6 +109,6 @@ body {
   }
 
   &--incart {
-    background: #5B3A32;
+    background: #5b3a32;
   }
 }

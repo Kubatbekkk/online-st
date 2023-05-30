@@ -1,6 +1,13 @@
 .pictures-list {
   padding-top: 40px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  .pictures-list {
+    gap: 15px;
+  }
 }

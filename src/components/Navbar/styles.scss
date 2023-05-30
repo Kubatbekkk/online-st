@@ -1,15 +1,22 @@
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
   border-bottom: 1px solid #e1e1e1;
   background: #d9d9d9;
+  width: 100vw;
 
   &__container {
-    width: 1216px;
+    width: 1200px;
     height: 97px;
     display: flex;
     align-items: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__container {
+      width: 1160px;
+    }
   }
 
   &__links {

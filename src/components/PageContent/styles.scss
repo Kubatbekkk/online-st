@@ -2,8 +2,14 @@
   margin-top: -10px;
 
   &__container {
-    width: 1216px;
+    width: 1200px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__container {
+      width: 1160px;
+    }
   }
 
   &__title {

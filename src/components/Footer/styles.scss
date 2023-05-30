@@ -1,5 +1,6 @@
 .footer {
   height: 96px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,8 +8,15 @@
   background: #d9d9d9;
 
   &__container {
-    width: 1216px;
+    margin: 0 auto;
+    width: 1200px;
     display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__container {
+      max-width: 1160px;
+    }
   }
 
   &__logo {
